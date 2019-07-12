@@ -160,12 +160,11 @@ d3.json("https://raw.githubusercontent.com/felipemartenexen/pdrsx/master/trajeto
   } // Reseta
 
   //Efeito transição
-
-  function transition() {
+ function transition() {
       linePath.transition()
-          .](45000)
+          .duration(45000)
           .attrTween("stroke-dasharray", tweenDash)
-          .on("end", transition); // Restart the transition at it's end
+          .on("end", transition);
   } //fim transição
 
   
